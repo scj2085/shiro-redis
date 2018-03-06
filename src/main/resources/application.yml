@@ -1,0 +1,24 @@
+server:
+  port: 2222
+  context-path: /account
+#jedis: 
+#  servers: 
+#    - 127.0.0.1:6379
+#    - 10.112.178.21:6379
+#    - 10.112.178.21:6378
+#    - 10.112.178.21:6377
+#    - 10.112.178.21:6376
+#    - 10.112.178.21:6375
+#    - 10.112.178.21:6374
+jedis: 
+  pool: 
+    maxIdle: 100 #最大闲置
+    minIdle: 10 #最小闲置
+    maxTotal: 500 #最大连接数
+    maxWait: 5000 #最大等待
+    testOnBorrow: true #可以获取
+redis: 
+  host: 127.0.0.1
+  port: 6379
+  timeout: 0
+    
